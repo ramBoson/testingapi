@@ -172,10 +172,33 @@ console.log("dataresponse",response) ;
 
  
 
- const getvalues = async()=>{
-  let access_token = "4ARS96PN27JeY7NyubNjArv9jc4FOL4o";
+//  const getvalues = async()=>{
+//   let access_token = "4ARS96PN27JeY7NyubNjArv9jc4FOL4o";
+//   let s =  await axios.request(`https://api.elementpad.io/elementsapi/v1/users`,{headers:{
+//         'Authorization': `Bearer vATR2p2l8cv0BVbpEQ2u9KzdXGW5nMgZ`,
+//         "Access-Control-Allow-Headers" : "*",
+//         "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE, PUT",
+//         "Access-Control-Allow-Credentials":"true"
+//   }}
+//   )
+// //   let s = await fetch("https://3.139.93.222:42102/elementsapi/v1/users/",{headers:{
+// //     'Authorization': "Bearer 4Ro0FgB38F68WXzIdusdCCMLFwu4t9cu",
+// //     "Access-Control-Allow-Headers" : "Content-Type",
+// //             "Access-Control-Allow-Origin": "https://api.elementpad.io/",
+// //             "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+// // }},{mode:'no-cors'})
+// // let s = await axios.post("https://api.elementpad.io/elementsapi/v1/users/?Authorization=Bearer bOxj41yiRCTLoW7cMCsKa8DoQ9Ufhu2w")
+//   console.log("get",s)
+  
+    
+// }
+
+const getvalues = async()=>{
+  //4ARS96PN27JeY7NyubNjArv9jc4FOL4o
+  //vATR2p2l8cv0BVbpEQ2u9KzdXGW5nMgZ
+  let access_token = "7YcAred0aaxEP2RLxn913eMkMT4HRMvR";
   let s =  await axios.request(`https://api.elementpad.io/elementsapi/v1/users`,{headers:{
-        'Authorization': `Bearer vATR2p2l8cv0BVbpEQ2u9KzdXGW5nMgZ`,
+        'Authorization': `Bearer 7YcAred0aaxEP2RLxn913eMkMT4HRMvR`,
         "Access-Control-Allow-Headers" : "*",
         "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE, PUT",
         "Access-Control-Allow-Credentials":"true"
