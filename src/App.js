@@ -523,7 +523,7 @@ const options = {
     Authorization: 'Bearer yL9zDpBaVRaXMygrGQy73esK9umul1iC'
   }
 };
-
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 axios.request(options).then(function (response) {
   console.log(response.data);
 }).catch(function (error) {
@@ -544,7 +544,7 @@ const getanotherquerry = async() =>{
       scope: 'email'
     }
   };
-  
+  axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
   axios.request(options).then(function (response) {
     console.log(response.data);
   }).catch(function (error) {
