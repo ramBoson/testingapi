@@ -520,7 +520,7 @@ const options = {
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
-    Authorization: 'Bearer yL9zDpBaVRaXMygrGQy73esK9umul1iC'
+    Authorization: 'Bearer vhQxkXyA0X0oE1Rm20A03J7Azhp6skkH'
   }
 };
 axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
@@ -555,6 +555,25 @@ const getanotherquerry = async() =>{
 }
 
 
+const extraget=()=>{
+  const options = {
+    method: 'GET',
+    url: 'https://7oigah6lib.execute-api.us-east-2.amazonaws.com/DEV',
+    //https://7oigah6lib.execute-api.us-east-2.amazonaws.com/DEV
+    // headers: {
+    //   Accept: 'application/json',
+    //   'Content-Type': 'application/json',
+    //   Authorization: 'Bearer vhQxkXyA0X0oE1Rm20A03J7Azhp6skkH'
+    // }
+  };
+  axios.request(options).then(function (response) {
+    console.log(response.data);
+  }).catch(function (error) {
+    console.error(error);
+  });
+  
+}
+
   return (
     <div className="App">
                    
@@ -580,6 +599,10 @@ const getanotherquerry = async() =>{
                     <br></br>
                     <button onClick={()=>newaxiosmethod()}>
                        New POST
+                    </button>
+                    <br></br>
+                    <button onClick={()=>extraget()}>
+                       Extra
                     </button>
 
 
