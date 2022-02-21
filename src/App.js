@@ -520,7 +520,7 @@ const options = {
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
-    Authorization: 'Bearer vhQxkXyA0X0oE1Rm20A03J7Azhp6skkH'
+    Authorization: 'Bearer uZJ4NHzGcMqWgFIDUxruIm1sVz0PhxX5'
   }
 };
 axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
